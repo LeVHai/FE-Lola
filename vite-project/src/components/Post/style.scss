@@ -1,0 +1,116 @@
+.post-item {
+  // .image-container {
+  //   border-radius: 0.9rem;
+  //   overflow: hidden;
+
+  //   .image-wrapper {
+  //     border-radius: 0.8rem;
+  //     overflow: hidden;
+
+  //     img {
+  //       width: 100%; // Chiếm toàn bộ chiều rộng
+  //       height: 100%; // Chiếm toàn bộ chiều cao
+  //       object-fit: cover; // Giữ tỷ lệ ảnh
+  //     }
+  //   }
+
+  //   &.single-image {
+  //     display: flex;
+  //     .image-wrapper {
+  //       flex: 1; // Chiếm toàn bộ chiều rộng
+  //     }
+  //   }
+
+  //   &.double-image {
+  //     padding: 0 0.5rem;
+
+  //     display: flex; // Sắp xếp theo chiều ngang
+  //     gap: 0.1rem; // Khoảng cách giữa các phần tử
+  //     height: 25rem;
+  //     .image-wrapper {
+  //       flex: 1; // Mỗi ảnh chiếm 50% chiều rộng
+  //     }
+  //   }
+
+  //   &.triple-image {
+  //     padding: 0 0.5rem;
+  //     display: grid;
+  //     grid-template-columns: 1fr 1fr; // Hai cột, mỗi cột chiếm 50% chiều rộng
+  //     grid-template-rows: 1fr 1fr; // Hai hàng
+  //     gap: 0.1rem; // Khoảng cách giữa các phần tử
+
+  //     grid-template-areas:
+  //       "image1 image2"
+  //       "image1 image3"; // Bố cục với ảnh đầu chiếm toàn bộ chiều dài cột bên trái
+
+  //     .image-wrapper {
+  //       &.image1 {
+  //         grid-area: image1; // Chiếm toàn bộ chiều dài bên trái
+  //       }
+
+  //       &.image2 {
+  //         grid-area: image2; // Chiếm 50% chiều dài ở bên phải
+  //       }
+
+  //       &.image3 {
+  //         grid-area: image3; // Chiếm 50% chiều dài bên phải, dưới ảnh 2
+  //       }
+  //     }
+  //   }
+
+  //   &.quadruple-image {
+  //     padding: 0 0.5rem;
+  //     display: grid; // Sắp xếp theo dạng lưới
+  //     grid-template-columns: 1fr 1fr; // Hai cột, mỗi cột chiếm 50% chiều rộng
+  //     grid-template-rows: 1fr 1fr; // Hai hàng
+  //     grid-gap: 0.1rem; // Khoảng cách giữa các phần tử
+
+  //     .image-wrapper {
+  //       flex-basis: 100%; // Chiếm toàn bộ chiều rộng
+  //       .image-box {
+  //         height: auto; // Điều chỉnh chiều cao theo ảnh
+  //       }
+  //     }
+  //   }
+  // }
+  .icon {
+    color: #202020;
+    font-size: 20px;
+    &:hover {
+      color: rgb(97, 97, 96);
+      cursor: pointer;
+    }
+  }
+  .like {
+    font-size: 20px;
+    cursor: pointer;
+    color: #ff3040;
+    animation: like-animation 0.25s ease-in-out;
+  }
+  .bookmark{
+    font-size: 20px;
+    color: #f4bf10;
+    animation: like-animation 0.25s ease-in-out;
+    cursor: pointer;
+
+  }
+  @keyframes like-animation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+}
+.ant-popover .ant-popover-inner {
+  background-color: #ffffff;
+  background-clip: padding-box;
+  border-radius: 8px;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.08), 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+  // padding: 0;
+}

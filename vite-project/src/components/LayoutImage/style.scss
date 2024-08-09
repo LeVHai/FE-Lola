@@ -1,0 +1,111 @@
+.layout-image {
+  overflow: hidden;
+  .image-container {
+    overflow: hidden;
+    .image-wrapper {
+      border-radius: 2px;
+      overflow: hidden;
+
+      img {
+        width: 100%; // Chiếm toàn bộ chiều rộng
+        height: 100%; // Chiếm toàn bộ chiều cao
+        object-fit: cover; // Giữ tỷ lệ ảnh
+      }
+    }
+
+    &.single-image {
+      display: flex;
+      .image-wrapper {
+        flex: 1; // Chiếm toàn bộ chiều rộng
+      }
+    }
+
+    &.double-image {
+      display: flex; // Sắp xếp theo chiều ngang
+      gap: 0.1rem; // Khoảng cách giữa các phần tử
+      // height: 25rem;
+      height: 50%;
+
+      .image-wrapper {
+        flex: 1; // Mỗi ảnh chiếm 50% chiều rộng
+      }
+    }
+
+    &.triple-image {
+      display: grid;
+      grid-template-columns: 1fr 1fr; // Hai cột, mỗi cột chiếm 50% chiều rộng
+      grid-template-rows: 1fr 1fr; // Hai hàng
+      gap: 0.1rem; // Khoảng cách giữa các phần tử
+      // height: 25rem;
+      height: 100%;
+
+      grid-template-areas:
+        "image1 image2"
+        "image1 image3"; // Bố cục với ảnh đầu chiếm toàn bộ chiều dài cột bên trái
+
+      .image-wrapper {
+        &.image1 {
+          grid-area: image1; // Chiếm toàn bộ chiều dài bên trái
+        }
+
+        &.image2 {
+          grid-area: image2; // Chiếm 50% chiều dài ở bên phải
+        }
+
+        &.image3 {
+          grid-area: image3; // Chiếm 50% chiều dài bên phải, dưới ảnh 2
+        }
+      }
+    }
+
+    &.quadruple-image {
+      display: grid; // Sắp xếp theo dạng lưới
+      grid-template-columns: 1fr 1fr; // Hai cột, mỗi cột chiếm 50% chiều rộng
+      grid-template-rows: 1fr 1fr; // Hai hàng
+      grid-gap: 0.1rem; // Khoảng cách giữa các phần tử
+      max-height: 30rem;
+      .image-wrapper {
+        .image-box {
+          height: 100%; // Điều chỉnh chiều cao theo ảnh
+          width: 100%; // Điều chỉnh chiều cao theo ảnh
+        }
+      }
+    }
+    &.mega-image {
+      display: grid; // Sắp xếp theo dạng lưới
+      grid-template-columns: 1fr 1fr; // Hai cột, mỗi cột chiếm 50% chiều rộng
+      grid-template-rows: 1fr 1fr; // Hai hàng
+      grid-gap: 0.1rem; // Khoảng cách giữa các phần tử
+      max-height: 30rem;
+      .image-wrapper {
+        position: relative;
+        .image-box {
+          height: 100%;
+          width: 100%;
+        }
+        .hidden{
+          display: none;
+        }
+        .show-more {
+          z-index: 1;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          height: 100%;
+          font-size: 3rem;
+          font-weight: 500;
+          color: aliceblue;
+          position: absolute;
+          top: 0;
+          left: 0;
+          background-color: rgba(49, 49, 49, 0.532);
+          cursor: pointer;
+          &:hover{
+            background-color: rgba(15, 15, 15, 0.452);;
+          }
+        }
+      }
+    }
+  }
+}

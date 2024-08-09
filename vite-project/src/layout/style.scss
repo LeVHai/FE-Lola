@@ -1,0 +1,47 @@
+.default-layout {
+  .ant-layout {
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    min-height: 0;
+    // background: #fff;
+  }
+  .sider {
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    // border-right: 1px solid bisque;
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+  }
+  .content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .triger-btn {
+    font-size: 16px;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+  }
+
+  .icon-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #c7c6c65b;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    &:hover{
+      background-color: #a8a6a65b;
+    }
+  }
+}

@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+li {
+  list-style: none;
+}
+body {
+}
+.ant-image-preview-root {
+  .ant-image-preview-mask {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    height: 100%;
+    background-color: rgb(0 0 0);
+    pointer-events: none;
+  }
+  .ant-image-preview-img {
+    max-width: 60%;
+    max-height: 100%;
+  }
+}
+.ant-image .ant-image-mask:hover {
+  opacity: 0.5;
+}
+.ant-image-mask-info{
+  display: none;
+}
+/* Tùy chỉnh cho tất cả thanh cuộn trong trang */
+::-webkit-scrollbar {
+  width: 8px; /* Độ rộng của thanh cuộn */
+  height: 8px; /* Độ cao của thanh cuộn khi nằm ngang */
+}
+
+/* Tùy chỉnh đường track (phần bao quanh thumb) */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Màu nền của track */
+  border-radius: 10px; /* Bo tròn góc */
+}
+
+/* Tùy chỉnh thumb (phần có thể kéo của thanh cuộn) */
+::-webkit-scrollbar-thumb {
+  background: #88888851; /* Màu của thumb */
+  border-radius: 10px; /* Bo tròn góc */
+}
+
+/* Thay đổi màu của thumb khi hover hoặc click */
+::-webkit-scrollbar-thumb:hover {
+  background: #55555590; /* Màu của thumb khi hover */
+}

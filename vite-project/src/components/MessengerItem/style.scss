@@ -1,0 +1,63 @@
+// .messenger-item {
+//   display: flex;
+//   gap: 5px;
+//   .position-user {
+//     align-self: flex-start;
+//   }
+//   .position-current-user {
+//     align-self: flex-end;
+//   }
+//   .user {
+//     background-color: rgb(149, 152, 153);
+//     color: #fff;
+//     padding: 10px 15px;
+//     border-radius: 20px;
+//     max-width: 30rem;
+//     word-wrap: break-word;
+//     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+//   }
+//   .current-user {
+//     background-color: rgb(91, 193, 241);
+//     color: #fff;
+//     padding: 10px 15px;
+//     border-radius: 20px;
+//     max-width: 30rem;
+//     word-wrap: break-word;
+//     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+//   }
+// }
+.messenger-item {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+  
+    &.position-user {
+      align-self: flex-start; /* Tin nhắn của người khác căn chỉnh về phía bên trái */
+    }
+    &.position-current-user {
+      align-self: flex-end; 
+      flex-direction: row-reverse;
+    }
+  
+    .user {
+      background-color: rgb(149, 152, 153);
+      color: #fff;
+      padding: 10px 15px;
+      border-radius: 20px;
+      max-width: 30rem;
+      word-wrap: break-word;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+  
+    .current-user {
+    
+      background-color: rgb(91, 193, 241);
+      color: #fff;
+      padding: 10px 15px;
+      border-radius: 20px;
+      max-width: 30rem;
+      word-wrap: break-word;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+  }
+  

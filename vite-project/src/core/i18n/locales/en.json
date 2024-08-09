@@ -1,0 +1,13 @@
+{
+  "common": {
+    "login": "Sign In",
+    "register": "Sing Up",
+    "email":"Email",
+    "password":"Password",
+   "validate_field":"Field is required",
+
+   "have_account": "You have already account",
+    "confirm_password":"Confirm password",
+    "date_of_birth":"Birth day"
+  }
+}

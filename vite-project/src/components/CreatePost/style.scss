@@ -1,0 +1,84 @@
+.create-post {
+  .ant-modal .ant-modal-footer {
+    text-align: start;
+    background: transparent;
+    margin-top: 12px;
+    padding: 0;
+    border-top: none;
+    border-radius: 0;
+  }
+  .x-input {
+    margin-right: 80px;
+    width: 100%;
+    background-color: #f1f2f6;
+    border-radius: 10px;
+    padding: 5px 10px;
+    max-height: 80px;
+    white-space: normal; /* Cho phép văn bản tự động xuống dòng */
+    word-wrap: break-word; /* Ngắt dòng các từ dài */
+    overflow-wrap: break-word; /* Ngắt dòng các từ dài, giống với word-wrap */
+    &:hover {
+      background-color: #e0dede;
+      cursor: pointer;
+    }
+    .placeholder {
+      color: #a8a8a8;
+    }
+    .content {
+      color: #000000;
+    }
+  }
+}
+.x-model {
+  .ant-modal-footer {
+    text-align: start;
+  }
+  .ant-card-body {
+    padding: 5px;
+  }
+}
+.create-content {
+  max-height: 20rem;
+  overflow-y: auto;
+  background-color: #fff;
+  .ant-input-outlined:focus-within {
+    border-color: none;
+    box-shadow: none !important;
+  }
+  .ant-input-outlined {
+    background: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+  }
+  .ant-input-outlined:focus,
+  .ant-input-outlined:focus-within {
+    border-color: transparent !important;
+    box-shadow: none !important;
+  }
+  .ant-input-outlined:hover {
+    border-color: transparent;
+  }
+  .ant-card-body {
+    padding: 5px;
+  }
+  .cancel-image {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c8c6c66d;
+    &:hover {
+      background-color: #6765656d;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+  }
+}

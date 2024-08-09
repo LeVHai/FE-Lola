@@ -1,0 +1,23 @@
+{
+    "common": {
+        "login":"Đăng nhập",
+
+        "register": "Đăng kí",
+        "email":"Email",
+        "password":"Mật khẩu",
+        "validate_field":"Trường này không được để trống",
+        "no_account": "Bạn chưa có tài khoản ?",
+        "have_account": "Bạn đã có tài khoản ?",
+        "confirm_password":"Xác nhận mật khẩu",
+        "date_of_birth":"Ngày sinh"
+        
+    },
+    "menu":{
+        "home": "Trang chủ",
+        "friend": "Bạn bè",
+        "messenger":"Tin nhắn",
+        "notification":"Thông báo",
+        "profile":"Trang cá nhân",
+        "logout": "Đăng xuất"
+    }
+}
